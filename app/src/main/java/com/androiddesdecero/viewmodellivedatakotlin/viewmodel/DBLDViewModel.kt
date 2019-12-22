@@ -9,11 +9,11 @@ class DBLDViewModel: ViewModel() {
 
     var user: MutableLiveData<User> = MutableLiveData()
 
-    fun getUser(): LiveData<User>{
-        return user
+    fun setUser(user: User){
+        this.user.value = user
     }
 
-    fun setUser(){
+    fun updateUser(){
         val user = User("Laura", "23")
         this.user.value = user
     }

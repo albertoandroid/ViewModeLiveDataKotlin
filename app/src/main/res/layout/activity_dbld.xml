@@ -3,7 +3,9 @@
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-
+        <variable
+                name="viewModel"
+                type="com.androiddesdecero.viewmodellivedatakotlin.viewmodel.DBLDViewModel"/>
     </data>
 
     <LinearLayout
@@ -13,14 +15,17 @@
             tools:context=".ui.DBLDActivity">
 
         <TextView
+                android:text="@{viewModel.user.nombre}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         <TextView
+                android:text="@{viewModel.user.edad}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         <Button
+                android:onClick="@{()->viewModel.updateUser()}"
                 android:text="Actualizar User"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
