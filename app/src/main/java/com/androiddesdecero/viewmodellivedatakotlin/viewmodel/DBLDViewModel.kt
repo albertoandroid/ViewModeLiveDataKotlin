@@ -9,6 +9,7 @@ class DBLDViewModel: ViewModel() {
 
     var user: MutableLiveData<User> = MutableLiveData()
     var visible: MutableLiveData<Boolean> = MutableLiveData()
+    var size: MutableLiveData<Float> = MutableLiveData(14f)
 
     fun setUser(user: User){
         this.user.value = user
@@ -29,5 +30,6 @@ class DBLDViewModel: ViewModel() {
         }else{
             visible.value = true
         }
+        size.value = size.value!!.toFloat() + 5f
     }
 }
