@@ -3,10 +3,7 @@ package com.androiddesdecero.viewmodellivedatakotlin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.androiddesdecero.viewmodellivedatakotlin.ui.DataBindingActivity
-import com.androiddesdecero.viewmodellivedatakotlin.ui.LiveDataActivity
-import com.androiddesdecero.viewmodellivedatakotlin.ui.UserViewModelActivity
-import com.androiddesdecero.viewmodellivedatakotlin.ui.ViewModelActivity
+import com.androiddesdecero.viewmodellivedatakotlin.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -38,10 +35,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(applicationContext, DataBindingActivity::class.java))
         }
 
-        /*
+
         btDBLABinding.setOnClickListener {
             startActivity(Intent(applicationContext, DBLDActivity::class.java))
         }
-        */
+
     }
 }
