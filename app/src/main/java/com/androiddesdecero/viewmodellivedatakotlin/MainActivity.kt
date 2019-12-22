@@ -3,6 +3,7 @@ package com.androiddesdecero.viewmodellivedatakotlin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.androiddesdecero.viewmodellivedatakotlin.ui.LiveDataActivity
 import com.androiddesdecero.viewmodellivedatakotlin.ui.UserViewModelActivity
 import com.androiddesdecero.viewmodellivedatakotlin.ui.ViewModelActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,11 +28,11 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        /*
+
         btLiveData.setOnClickListener {
             startActivity(Intent(applicationContext, LiveDataActivity::class.java))
         }
-
+/*
         btDataBinding.setOnClickListener {
             startActivity(Intent(applicationContext, DataBindingActivity::class.java))
         }
